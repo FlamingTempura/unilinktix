@@ -1,0 +1,100 @@
+@font-face {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Catamaran Thin'), local('Catamaran-Thin'), url(fonts/Catamaran-Thin.ttf);
+}
+@font-face {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Catamaran'), local('Catamaran-Regular'), url(fonts/Catamaran-Regular.ttf);
+}
+@font-face {
+	font-family: 'Catamaran';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Catamaran Bold'), local('Catamaran-Bold'), url(fonts/Catamaran-Bold.ttf);
+}
+body {
+	color: #222;
+	font-family: Catamaran, sans-serif;
+	line-height: 1.5em;
+	margin: 0 auto;
+	max-width: 400px;
+	text-align: center;
+}
+h1 {
+	color: #E60079;
+	font-size: 28px;
+	font-weight: 100;
+	margin-top: 28px;
+}
+h2 {
+	color: #777;
+	font-size: 24px;
+	font-weight: 100;
+	margin-top: 28px;
+}
+form {
+	padding: 10px;
+}
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+input {
+	box-sizing: border-box;
+	font-family: Catamaran, sans-serif;
+	height: 40px;
+	margin: 5px;
+	text-indent: 6px;
+	width: 100%;
+}
+input[type=email],
+input[type=password] {
+	font-size: 16px;
+}
+input[type=submit] {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#error,
+#loading {
+	margin-top: 40%;
+}
+.ticket {
+	border: 1px solid #779AAB;
+	border-radius: 4px;
+	margin: 8px;
+	padding: 8px;
+}
+.title {
+	font-weight: 700;
+}
+.remaining .number {
+	color: #779AAB;
+	font-size: 68px;
+	font-weight: 100;
+	line-height: 1.1em;
+}
+.remaining {
+	margin: 4px 0 8px;
+}
+.expired-tickets .ticket {
+	background: #eee;
+	border: none;
+	opacity: 0.7;
+}
+.cost,
+.issued,
+.small {
+	font-size: .8em;
+}
+#loginform,
+#tickets,
+#error,
+.status.expired {
+	display: none;
+}

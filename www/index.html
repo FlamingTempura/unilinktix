@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+	<div id="loading">
+		<h1>Loading...</h1>
+	</div>
+
+	<form id="loginform">
+		<h1>Unilink tickets login</h1>
+
+		<div class="error"></div>
+
+		<p><br>Please enter your unilink email and password to retrieve ticket information from your account:</p>
+
+		<fieldset id="loginfields">
+			<input type="email" id="username" placeholder="Email" required><br>
+			<input type="password" id="password" placeholder="Password" required><br>
+			<input type="submit" value="Login">
+		</fieldset>
+
+		<p class="small"><br><br><strong>Privacy:</strong><br> Your unilink username and password will be stored on your device for the sole purpose of retrieving ticket details from the Unilink website. Your details will not be sent anywhere else. This app cannot be used for purchasing tickets.</p>
+		<p class="small">The source code for the project is available at <a href="#" id="github">github.com/FlamingTempura/unilinktix</a>.</p>
+	</form>
+
+	<div id="tickets">
+		<h1>Your UniLink Tickets</h2>
+		<div class="active-tickets"></div>
+
+		<h2>Expired tickets</h2>
+		<div class="expired-tickets"></div>
+
+		<p><br><a href="#" id="logout">Log out</a></p>
+	</div>
+
+	<div id="error">
+		<h1>An error occured</h2>
+
+		<div class="message"></div>
+
+		<p><br><a href="#" id="retry">Retry</a> &nbsp; &nbsp; &nbsp;
+				<a href="#" id="login">Log in</a></p>
+	</div>
+
+	<script src="lib/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
